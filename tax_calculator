@@ -1,0 +1,37 @@
+//First attempt at creating a cell phone cash register
+
+var salesTax = 1.08;
+var numPhones = 1;
+var numAccessories = prompt("How many accessories would you like?");
+var phonePrice = 98;
+var accessoryPrice = 15;
+var spendingThreshold = 150;
+var accountBalance = 1000;
+var totalPurchasePrice = (phonePrice * numPhones) + (accessoryPrice * numAccessories);
+
+function calculateTax() {
+	totalPrice = totalPurchasePrice * salesTax;
+	return totalPrice;
+}
+function totalPurchase() {
+	a = numPhones * phonePrice;
+	b= numAccessories * accessoryPrice;
+	c = a + b;
+	return c;
+}
+
+for (totalPurchasePrice; totalPurchasePrice < spendingThreshold; totalPurchasePrice++) {
+	
+	if (totalPurchasePrice > spendingThreshold){
+	alert("You have exceeded your spending threshold");
+	}
+}
+
+if (accountBalance > 0) {
+	accountBalance++;
+	}
+	else alert("You have no money left to spend.");
+
+totalPurchase();
+calculateTax();
+
